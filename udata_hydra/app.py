@@ -55,7 +55,7 @@ class ResourceDocument(Schema):
     checksum_value = fields.Str(allow_none=True)
     created_at = fields.DateTime(required=True)
     modified = fields.DateTime(required=True)
-    published = fields.DateTime(required=True)
+    published = fields.DateTime()
     extras = fields.Dict()
     harvest = fields.Dict()
 

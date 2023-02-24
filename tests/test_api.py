@@ -150,7 +150,6 @@ async def test_api_resource_updated(client):
             "checksum_value": "b7b1cd8230881b18b6b487d550039949867ec7c5",
             "created_at": datetime.now().isoformat(),
             "modified": datetime.now().isoformat(),
-            "published": datetime.now().isoformat(),
         }
     }
     resp = await client.post("/api/resource/updated/", json=payload)
